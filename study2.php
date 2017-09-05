@@ -1,9 +1,18 @@
 <?php
 
-//真偽値
-/*
-文字列:空文字列、もしくは 0 の文字列だった場合に false 
-それ以外は、true
+$signal = "red";
 
-数値:0 もしくは 0.0 の場合は false、それ以外は true 
-論理値の場合は（そのままなのですが）、false の場合が false になります。
+switch ($signal){
+    case "red":
+      echo "stop";
+      break;
+    
+    case "blue":
+    case "green":
+      echo "go";
+      break;
+
+    case "yellow":
+      echo "caution";
+      break;
+}
