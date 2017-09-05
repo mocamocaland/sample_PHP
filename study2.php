@@ -15,4 +15,8 @@ switch ($signal){
     case "yellow":
       echo "caution";
       break;
+
+    default:
+      echo "wrong signal!";
+      break;
 }
